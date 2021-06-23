@@ -40,3 +40,14 @@ variable "compute_engine_boot_disk_image" {
 }
 
 ####################################################################
+
+#COMPUTE NETWORK
+
+variable "google_vpc_networks" {
+    type = list
+    default = ["devvpcnetwork", "stagevpcnetwork", "prodvpcnetwork"]
+}
+
+####################################################################
+
+
