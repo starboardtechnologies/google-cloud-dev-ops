@@ -17,6 +17,27 @@ variable "google_cloud_project_zone" {
 
 ####################################################################
 
+#CLOUD RUN
+
+variable "devops_google_cloud_run_name" {
+  type = list
+  default = ["<INSERT_DEV_GOOGLE_CLOUD_RUN_NAME", "<INSERT_STAGE_GOOGLE_CLOUD_RUN_NAME", "<INSERT_PROD_GOOGLE_CLOUD_RUN_NAME" ]
+}
+
+variable "devops_google_cloud_run_location" {
+  type = list
+  default = ["<INSERT_DEV_GOOGLE_CLOUD_RUN_LOCATION", "<INSERT_STAGE_GOOGLE_CLOUD_RUN_LOCATION", "<INSERT_PROD_GOOGLE_CLOUD_RUN_LOCATION"]
+}
+
+
+variable "devops_google_cloud_run_template_container_image" {
+  type = list
+  default = ["<INSERT_DEV_GOOGLE_CLOUD_RUN_CONTAINER_IMAGE", "<INSERT_STAGE_GOOGLE_CLOUD_RUN_CONTAINER_IMAGE", "<INSERT_PROD_GOOGLE_CLOUD_RUN_CONTAINER_IMAGE"]
+}
+
+
+####################################################################
+
 #COMPUTE ENGINE 
 
 variable "dev_ops_compute_engine_name" {
