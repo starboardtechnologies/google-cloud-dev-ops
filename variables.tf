@@ -35,7 +35,6 @@ variable "devops_google_cloud_run_template_container_image" {
   default = ["<INSERT_DEV_GOOGLE_CLOUD_RUN_CONTAINER_IMAGE", "<INSERT_STAGE_GOOGLE_CLOUD_RUN_CONTAINER_IMAGE", "<INSERT_PROD_GOOGLE_CLOUD_RUN_CONTAINER_IMAGE"]
 }
 
-
 ####################################################################
 
 #COMPUTE ENGINE 
