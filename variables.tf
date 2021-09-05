@@ -1,18 +1,26 @@
 ####################################################################
 
-variable "google_cloud_project" {
-  type = string
-  default = <INSERT GOOGLE CLOUD PROJECT NAME>
+#APP ENGINE
+
+variable "devops_google_cloud_app_engine_project_name" {
+    type = list
+    default = ["<INSERT_DEV_GOOGLE_CLOUD_APP_ENGINE_PROJECT_NAME>", "<INSERT_STAGE_GOOGLE_CLOUD_APP_ENGINE_PROJECT_NAME>", "<INSERT_PROD_GOOGLE_CLOUD_APP_ENGINE_PROJECT_NAME>"]
 }
 
-variable "google_cloud_project_region" {
-  type = string
-  default = <INSERT GOOGLE CLOUD PROJECT REGION>
+variable "devops_google_cloud_app_engine_project_id" {
+    type = list
+    default = ["<INSERT_DEV_GOOGLE_CLOUD_APP_ENGINE_PROJECT_ID>", "<INSERT_STAGE_GOOGLE_CLOUD_APP_ENGINE_PROJECT_ID>", "<INSERT_PROD_GOOGLE_CLOUD_APP_ENGINE_PROJECT_ID>"]
 }
 
-variable "google_cloud_project_zone" {
-  type = string
-  default = <INSERT GOOGLE CLOUD PROJECT ZONE>
+variable "devops_google_cloud_app_engine_project_org_id" {
+    type = list
+    default = ["<INSERT_DEV_GOOGLE_CLOUD_APP_ENGINE_PROJECT_ORG_ID>", "<INSERT_STAGE_GOOGLE_CLOUD_APP_ENGINE_PROJECT_ORG_ID>", "<INSERT_PROD_GOOGLE_CLOUD_APP_ENGINE_PROJECT_ORG_ID>"]
+}
+
+
+variable "devops_google_cloud_app_engine_location_id" {
+    type = list
+    default = ["<INSERT_DEV_GOOGLE_CLOUD_APP_ENGINE_LOCATION_ID", "<INSERT_STAGE_GOOGLE_CLOUD_APP_ENGINE_LOCATION_ID>", "<INSERT_PROD_GOOGLE_CLOUD_APP_ENGINE_LOCATION_ID>"]
 }
 
 ####################################################################
@@ -70,4 +78,21 @@ variable "google_vpc_networks" {
 
 ####################################################################
 
+#GOOGLE CLOUD PROVIDER 
 
+variable "google_cloud_project" {
+  type = string
+  default = <INSERT GOOGLE CLOUD PROJECT NAME>
+}
+
+variable "google_cloud_project_region" {
+  type = string
+  default = <INSERT GOOGLE CLOUD PROJECT REGION>
+}
+
+variable "google_cloud_project_zone" {
+  type = string
+  default = <INSERT GOOGLE CLOUD PROJECT ZONE>
+}
+
+####################################################################
