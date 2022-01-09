@@ -11,3 +11,4 @@
 
 ### Run Terraform Destroy (if needed)
 
+### EXPERIMENTING WITH AUTOMATION
